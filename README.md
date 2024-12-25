@@ -15,8 +15,12 @@ The codebases are built on top of [Detectron2](https://github.com/facebookresear
 **Train and Test**
 1. Train DiffSARShipInst
    
-`python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-train.yaml`
+```
+python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-train.yaml
+```
 
 3. Test DiffSARShipInst
    
-`python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-test.yaml --eval-only MODEL.WEIGHTS path/to/model.pth`
+```
+python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-test.yaml --eval-only MODEL.WEIGHTS path/to/model.pth
+```
