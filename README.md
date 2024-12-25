@@ -1,7 +1,7 @@
 # DiffSARShipInst
 **Installation**
 
-The codebases are built on top of Detectron2, Sparse R-CNN, denoising-diffusion-pytorch, and DiffusionInst. Thanks very much.
+The codebases are built on top of [Detectron2](https://github.com/facebookresearch/detectron2), [Sparse R-CNN](https://github.com/facebookresearch/detectron2), [denoising-diffusion-pytorch](https://github.com/lucidrains/denoising-diffusion-pytorch), and [DiffusionInst](https://github.com/chenhaoxing/DiffusionInst). Thanks very much.
 
 **Requirements**
 1. Windows, Linux or macOS with Python ≥ 3.6
@@ -14,7 +14,9 @@ The codebases are built on top of Detectron2, Sparse R-CNN, denoising-diffusion-
 
 **Train and Test**
 1. Train DiffSARShipInst
-python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-train.yaml
+   
+`python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-train.yaml`
 
-2. Test DiffSARShipInst
-python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-test.yaml --eval-only MODEL.WEIGHTS path/to/model.pth
+3. Test DiffSARShipInst
+   
+`python train_net.py --num-gpus 1 --config-file configs/DiffSARShipInst-SSDD-test.yaml --eval-only MODEL.WEIGHTS path/to/model.pth`
